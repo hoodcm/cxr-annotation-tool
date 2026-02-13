@@ -7,10 +7,12 @@ Thumbs.db
 .vscode/
 *.swp
 
-# Claude local files
-.claude/settings.local.json
+# Claude
+.claude/
+CLAUDE.md
 CLAUDE.local.md
 
 # Session management docs (personal/private)
 CONTEXT.md
 TODO.md
+CHANGELOG.md

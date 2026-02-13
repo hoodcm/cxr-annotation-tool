@@ -60,3 +60,36 @@ git add data/ && git commit -m "Update taxonomy data" && git push
 ## Environment Variables
 
 None required. Pure client-side application.
+
+## Project Files
+
+| File | Purpose | Update frequency |
+|------|---------|------------------|
+| `CLAUDE.md` | Project instructions | As needed |
+| `CONTEXT.md` | Stable background reference | Rarely |
+| `CHANGELOG.md` | Change history | After substantive changes |
+| `TODO.md` | Actionable tasks | Frequently |
+
+## Session Startup
+
+At the start of each session:
+
+1. **Check `TODO.md`** for current tasks and open questions
+2. **Read `CONTEXT.md`** for background understanding
+3. **Scan recent `CHANGELOG.md`** entries for recent changes
+
+## Session Shutdown
+
+At the end of each session:
+
+1. **Update `TODO.md`** — check off completed items, add new tasks discovered
+2. **Update `CHANGELOG.md`** — log substantive changes under `[Unreleased]`
+
+## File Responsibilities
+
+| If you... | Update... |
+|-----------|-----------|
+| Complete a task | `TODO.md` — check it off |
+| Add a new task or question | `TODO.md` — add it |
+| Make substantive changes | `CHANGELOG.md` — log under [Unreleased] |
+| Learn something that changes understanding | `CONTEXT.md` — update reference |
